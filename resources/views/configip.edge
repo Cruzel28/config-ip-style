@@ -1,0 +1,74 @@
+@layout("layout")
+
+@section('style-section')
+         {{style("CSS/main")}}
+
+   @endsection
+
+   @section("content")
+
+    <body>
+
+
+        <div class="container">
+            <div class="content-box">
+               <div class="content">
+
+                    <div class="title">Config IP</div>
+                    <div class="subtitle">
+                       MAC::
+                    </div>
+                </div>
+
+                <div class="content-container">
+                   <div class="content-text">
+                      IP
+                     <input type="text"  id="ip" style="margin-left: 5rem;" placeholder="0.0.0.0">
+                   </div>
+                </div>
+
+                <div class="content-container">
+                   <div class="content-text">
+                      Gateway
+                     <input type="text" id="gateway" style="margin-left: 1.3rem;" placeholder="0.0.0.0">
+                   </div>
+                </div>
+
+                <div class="content-container">
+                   <div class="content-text">
+                     Netmask
+                     <input type="text" id="netmask" style="margin-left: 1.3rem;" placeholder="0.0.0.0">
+                   </div>
+                </div>
+
+                <div class="content-container">
+                   <div class="content-text">
+                      DNS
+                     <input type="text" id="dns" style="margin-left: 3.7rem;" placeholder="0.0.0.0">
+                   </div>
+                </div>
+
+                <div class="content-container">
+
+                        <button class="apply-button" onclick="status()">Apply</button>
+                        <button class="cancle-button">Cancle</button>
+
+                </div>
+
+            </div>
+
+            </div>
+
+
+        <div class="footer">
+            <div class="footer__copyright">&copy; 2020 </div>
+            <div class="footer__signature">
+               Innergy Webserver
+            </div>
+        </div>
+@endsection
+
+
+
+    </body>
+</html>

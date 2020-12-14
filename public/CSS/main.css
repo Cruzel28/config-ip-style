@@ -1,0 +1,215 @@
+
+
+
+.container{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content :center ;
+  align-items : center ;
+    height: 100%;
+    width: 100%;
+    background-image: url("../assets/bg.jpg") ;
+    background-repeat : no-repeat;
+background-size : cover ;
+background-position : center ;
+background-attachment :fixed ;
+}
+
+.content-box{
+  position: relative;
+  width: 674px;
+  height: 469px;
+  background: rgba(248, 249, 250, 0.71) ;
+
+  border-radius: 2rem;
+}
+
+
+
+.footer{
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  justify-content: space-between;
+  padding: 3rem 16px;
+  background-color: #000;
+  box-shadow: 0 0 1rem #000;
+  }
+
+
+.contentAP-box{
+  position: relative;
+  width: 674px;
+  height: auto;
+  background: rgba(248, 249, 250, 0.71) ;
+
+  border-radius: 2rem;
+}
+
+.content-container{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #003B3D;
+}
+
+.content{
+  display:flex;
+flex:1;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+color: #003B3D;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 3rem;
+}
+
+.subtitle{
+  font-size: 14px;
+  padding-top: .5rem;
+}
+
+.content-text{
+    display: inline;
+  font-size: 20px;
+  padding: 1rem 1rem;
+}
+
+.content-text input{
+
+font-size: 20px;
+
+}
+
+.toggle{
+  display: inline-block;
+  }
+
+ .toggle-input{
+  display: none;
+  }
+
+  .slider{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    height: 2rem;
+    width: 4rem;
+    background-color: #737373;
+    border-radius: 10rem;
+
+    }
+
+   .slider::before{
+     position: absolute;
+        content: '';
+     display: inline-block;
+
+     height: 1.7rem;
+     width: 1.7rem;
+     top : 3px;
+     left: 3px;
+
+     background: #fff;
+     border-radius: 50%;
+
+     transition: all 0.3s;
+    }
+
+    .toggle-input:checked + .slider {
+        background: #80b918;
+        border:1px;
+
+    }
+    .toggle-input:checked + .slider::before {
+        content: '';
+        left: 2rem;
+        background-color:#fff;
+    }
+
+   button{
+      display: block;
+
+      color: #fff;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+      margin: 1rem;
+   }
+
+    .apply-button{
+      height: 42px;
+      width: 122px;
+        background-color: #005255;
+    }
+    .cancle-button{
+      height: 42px;
+      width: 122px;
+      background-color: #B10202;
+  }
+
+  .content-box-ap{
+      position: relative;
+      width: 674px;
+      height: auto;
+      background: rgba(248, 249, 250, 0.71) ;
+
+      border-radius: 2rem;
+    }
+
+    .setwifi-button{
+      height: 42px;
+      width: 260px;
+      background-color: #519325;
+      font-size: 18px;
+    }
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  height: 50%;
+  overflow-y: scroll;
+  color: #000;
+}
+
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

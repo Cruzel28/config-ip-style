@@ -1,0 +1,72 @@
+@layout("layout")
+
+@section('style-section')
+         {{style("CSS/main")}}
+
+   @endsection
+
+   @section("content")
+        <div class="container">
+            <div class="content-box">
+               <div class="content">
+
+                    <div class="title">Config IP</div>
+                    <div class="subtitle">
+                       MAC::
+                    </div>
+                </div>
+
+                <div class="content-container">
+                   <div class="content-text">
+                      IP
+                      <span>0.0.0.0</span>
+                   </div>
+                </div>
+
+                <div class="content-container">
+                   <div class="content-text">
+                      Gateway
+                     <span>0.0.0.0</span>
+                   </div>
+                </div>
+
+                <div class="content-container">
+                   <div class="content-text">
+                     Netmask
+                     <span>0.0.0.0</span>
+                   </div>
+                </div>
+
+                <div class="content-container">
+                   <div class="content-text">
+                      DNS
+                      <span>0.0.0.0</span>
+                   </div>
+                </div>
+
+                <div class="content-container">
+
+
+                        <button class="cancle-button" onclick="reset()">Reset</button>
+
+                </div>
+
+            </div>
+
+            </div>
+
+
+        <div class="footer">
+            <div class="footer__copyright">&copy; 2020 </div>
+            <div class="footer__signature">
+               Innergy Webserver
+            </div>
+        </div>
+
+        @endsection
+        <script>
+
+
+            </script>
+    </body>
+</html>

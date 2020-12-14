@@ -1,0 +1,121 @@
+@layout("layout")
+
+@section('style-section')
+         {{style("CSS/main")}}
+
+   @endsection
+
+   @section("content")
+
+        <div class="container">
+            <div class="content-box-ap">
+               <div class="content-containner">
+
+                    <Button id="wifiname" class="setwifi-button" >#wifiname</Button>
+                    <div id="myModal" class="modal">
+
+
+                        <div class="modal-content">
+                          <span class="close">&times;</span>
+                          <h3>#wifiname</h3>
+                          <h3>#wifiname</h3>
+                          <h3>#wifiname</h3>
+                          <h3>#wifiname</h3>
+                          <h3>#wifiname</h3>
+                          <h3>#wifiname</h3>
+                          <h3>#wifiname</h3>
+                          <h3>#wifiname</h3>
+                          <h3>#wifiname</h3>
+                          <h3>#wifiname</h3>
+                          <h3>#wifiname</h3>
+                        </div>
+
+                      </div>
+
+                </div>
+
+                <div class="content-container">
+                   <div class="content-text">
+                      SSID
+                     <input type="text"  style="margin-left: 5rem;" placeholder="0.0.0.0">
+                   </div>
+                </div>
+
+                <div class="content-container">
+                   <div class="content-text">
+                      Passphrase
+                     <input type="text" style="margin-left: 1.3rem;" placeholder="0.0.0.0">
+                   </div>
+                </div>
+
+                <div class="content-container">
+                   <div class="content-text">
+                     Enable DHCP
+                     <label class="toggle">
+                        <input type="checkbox" onclick="handleOnClick()" class="toggle-input" statuc="active">
+                        <span class="slider"></span>
+                        </label>
+                   </div>
+                </div>
+
+                <div id="myDIV">
+                    <div class="content-container">
+                                     <div class="content-text">
+                                        IP
+                                       <input type="text"  style="margin-left: 5rem;" placeholder="0.0.0.0">
+                                     </div>
+                                  </div>
+
+                                  <div class="content-container">
+                                     <div class="content-text">
+                                        Gateway
+                                       <input type="text" style="margin-left: 1.3rem;" placeholder="0.0.0.0">
+                                     </div>
+                                  </div>
+
+                                  <div class="content-container">
+                                     <div class="content-text">
+                                       Netmask
+                                       <input type="text" style="margin-left: 1.3rem;" placeholder="0.0.0.0">
+                                     </div>
+                                  </div>
+
+                                  <div class="content-container">
+                                     <div class="content-text">
+                                        DNS1
+                                       <input type="text" style="margin-left: 3rem;" placeholder="0.0.0.0">
+                                     </div>
+                                  </div>
+
+                                  <div class="content-container">
+                                     <div class="content-text">
+                                        DNS2
+                                       <input type="text" style="margin-left: 3rem;" placeholder="0.0.0.0">
+                                     </div>
+                                  </div>
+                  </div>
+
+
+
+                <div class="content-container">
+
+                        <button class="apply-button">Apply</button>
+                        <button class="cancle-button">Cancle</button>
+
+                </div>
+
+            </div>
+
+            </div>
+
+
+        <div class="footer">
+            <div class="footer__copyright">&copy; 2020 </div>
+            <div class="footer__signature">
+               Innergy Webserver
+            </div>
+        </div>
+        @endsection
+
+    </body>
+</html>
